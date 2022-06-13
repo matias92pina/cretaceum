@@ -8,8 +8,8 @@ Proyecto IFTS N°18- Práctica profesional III
 Además está subido en PDF en este repositorio
 
 # Mockup
-Se encuentra en la carpeta mockups
+Se encuentra en la carpeta [Mockups](https://github.com/matias92pina/cretaceum/tree/main/Mockups)
 
 # Historias de usuario
-Project de User Stories: https://github.com/users/matias92pina/projects/1/views/1
+Project de [User Stories](https://github.com/users/matias92pina/projects/1/views/1)
 
