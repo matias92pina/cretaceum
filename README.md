@@ -4,7 +4,8 @@ Museo virtual
 Proyecto IFTS N°18- Práctica profesional III
 
 # Anteproyecto
-Link del anteproyecto. Además está subido en PDF en este repositorio
+Link del anteproyecto: https://docs.google.com/document/d/1L7Yr5wQT3w_wKJL4Wi9u_i9fPMztAa3MYJy3_DdbTxU/edit?usp=sharing. 
+Además está subido en PDF en este repositorio
 
 # Mockup
 Se encuentra en la carpeta mockups
