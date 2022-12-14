@@ -1,0 +1,44 @@
+<!-- CON EL EXTENDS TRAIGO EL FORMATO DEL HMTL QUE INDICO -->
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2 style="text-align: left;">Isaberrysaura</h2>
+<hr></hr>
+<div class="fichaInfo">
+    <div class="imagen">
+        <img src="static/img/Isablerrysaura.png">
+    </div>
+
+    <div class="info">
+        <h2>Información</h2>
+        <p>
+            Era un dinosaurio de tamaño mediano, midiendo entre 5 y 6 metros de largo 
+            aproximadamente. Era bípedo y ligero a diferencia de los estegosaurios posteriores. 
+            No se tienen evidencias de que poseyera algún tipo de placas o espinas primitivas, 
+            aunque es una posibilidad que queda solo en la especulación.
+            La clasificación de Isaberrysaura ha sido problemática. Comparte características con
+             distintos grupos de dinosaurios ornitisquios, tanto de los neornitisquios 
+             (ornitópodos y ceratopsios) como de los tireóforos (estegosaurios y anquilosaurios).
+              Salgado y colaboradores lo clasificaron originalmente como un neornitisquio basal 
+              pero estudios más recientes han arrojado la posibilidad de que se trate de un 
+              estegosaurio primitivo sin placas ni espinas y que aún poseía una postura bípeda y 
+              un peso modesto.  
+        </p>
+    </div>
+    <div class="caract">
+        <table border="2" role="row">
+                <tr>
+                    <td colspan="2"><h2>Características</h2></td>
+                </tr>
+                <tr><td>Largo:</td><td>5 metros</td></tr>
+                <tr><td>Peso:</td><td>5 T</td></tr>
+                <tr><td>Alimentación:</td><td>Omnívoro</td></tr> 
+                <tr><td>Período:</td><td>Jurásico medio</td></tr>    
+                <tr><td>Tipo:</td><td>oOrnitisquios</td></tr>      
+                <tr><td>Descubrimiento:</td><td>Zapala, Neuquén (2017)</td></tr>    
+        </table>  
+    </div>
+
+</div>
+{% endblock %}

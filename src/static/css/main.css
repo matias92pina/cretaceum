@@ -1,0 +1,66 @@
+body{
+    background: #00467F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A5CC82, #00467F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A5CC82, #00467F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/*CSS para la galería de imágenes*/
+div.dinosaurios{
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0,0,0,0.19);
+    float: left;
+    width: 350;
+    height: 350px;
+    
+}
+
+div.dinosaurios img{
+    width: 250px;
+    height: 250px;
+}
+
+div.dinosaurios:hover{
+    border: 1px solid lightcoral;
+    transform: rotate(-3deg);
+}
+
+div.pie{
+    text-align: center;
+    text-shadow: 2px 2px 5px purple;
+    padding: 10px;
+}
+
+/*CSS para las Fichas de información*/
+div.fichaInfo{
+    overflow: hidden;
+}
+
+div.fichaInfo img{
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    float:left;
+
+}
+
+div.info{
+    padding: 10px;
+    width: 350px;
+    margin: 20px;
+    float:left;
+}
+
+div.caract{
+    padding: 10px;
+    width: 350px;
+    margin: 20px;
+    float:left;
+}
+
+div.mapa{
+    padding: 10px;
+    width: 300px;
+    margin: 20px;
+    float:left;
+}

@@ -1,0 +1,39 @@
+<!-- CON EL EXTENDS TRAIGO EL FORMATO DEL HMTL QUE INDICO -->
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2 style="text-align: left;">Lapampasaurus</h2>
+<hr></hr>
+<div class="fichaInfo">
+    <div class="imagen">
+        <img src="static/img/Lampasaurus.png">
+    </div>
+
+    <div class="info">
+        <h2>Información</h2>
+        <p>
+            Utilizaba su pico ancho y chato para cortar ramas y hojas de plantas. 
+            Además, poseía una importante batería de dientes con los que molían el 
+            alimento.
+            Los restos fueron encontrados en 1991 pero recién en 2013 se determinó 
+            que era una nueva especie.
+
+        </p>
+    </div>
+    <div class="caract">
+        <table border="2" role="row">
+                <tr>
+                    <td colspan="2"><h2>Características</h2></td>
+                </tr>
+                <tr><td>Largo:</td><td>2 metros</td></tr>
+                <tr><td>Peso:</td><td>1 T</td></tr>
+                <tr><td>Alimentación:</td><td>Herbívoro</td></tr> 
+                <tr><td>Período:</td><td>Cretácico</td></tr>    
+                <tr><td>Tipo:</td><td>Hadrosaurios </td></tr>      
+                <tr><td>Descubrimiento:</td><td>Puelén, La Pampa (1991)</td></tr>    
+        </table>  
+    </div>
+
+</div>
+{% endblock %}

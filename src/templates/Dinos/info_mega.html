@@ -1,0 +1,38 @@
+<!-- CON EL EXTENDS TRAIGO EL FORMATO DEL HMTL QUE INDICO -->
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2 style="text-align: left;">Megaraptor</h2>
+<hr></hr>
+<div class="fichaInfo">
+    <div class="imagen">
+        <img src="static/img/Megaraptor.jpg">
+    </div>
+
+    <div class="info">
+        <h2>Información</h2>
+        <p>
+            Megaraptor fue un terópodo carnívoro de entre 8 metros de longitud y 
+            de constitución robusta. La característica más notable era una garra en 
+            el dedo 1 de la mano en forma de hoz de 42 centímetros de largo. 
+            Los primeros restos fósiles de Megaraptor consisten en una única garra y
+            el significado de su nombre, "Ladrón gigante con lanza en el pie".
+        </p>
+    </div>
+    <div class="caract">
+        <table border="2" role="row">
+                <tr>
+                    <td colspan="2"><h2>Características</h2></td>
+                </tr>
+                <tr><td>Largo:</td><td>8 metros</td></tr>
+                <tr><td>Peso:</td><td>1 T</td></tr>
+                <tr><td>Alimentación:</td><td>Carnívoro</td></tr> 
+                <tr><td>Período:</td><td>Cretácico</td></tr>    
+                <tr><td>Tipo:</td><td>Terópodo</td></tr>      
+                <tr><td>Descubrimiento:</td><td>Santa Cruz (1998)</td></tr>    
+        </table>  
+    </div>
+
+</div>
+{% endblock %}

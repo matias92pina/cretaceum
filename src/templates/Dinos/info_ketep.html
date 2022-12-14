@@ -1,0 +1,40 @@
+<!-- CON EL EXTENDS TRAIGO EL FORMATO DEL HMTL QUE INDICO -->
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2 style="text-align: left;">Katepensaurus</h2>
+<hr></hr>
+<div class="fichaInfo">
+    <div class="imagen">
+        <img src="static/img/Katepensaurus.jpg">
+    </div>
+
+    <div class="info">
+        <h2>Información</h2>
+        <p>
+            Se determinó que las vértebras dorsales de Katepensaurus son muy particulares entre 
+            los saurópodos, mostrando cinco autapomorfias, es decir, rasgos únicos. La fosa 
+            lateral neumática del centrum (la parte central de una vértebra) se divide en 
+            láminas internas. En la superficie lateral de las vértebras, sobreponiéndose a la 
+            articulación neurocentral, se encuentran bordes o crestas verticales. Un par de 
+            láminas se halla en la fosa parapofiseal centrodiapofiseal. Hay una fosa bien 
+            definida redondeada en el aspecto lateral de las postzigapófisis. 
+        </p>
+    </div>
+    <div class="caract">
+        <table border="2" role="row">
+                <tr>
+                    <td colspan="2"><h2>Características</h2></td>
+                </tr>
+                <tr><td>Largo:</td><td>13 m</td></tr>
+                <tr><td>Peso:</td><td>INGRESAR</td></tr>
+                <tr><td>Alimentación:</td><td>Herbívoro</td></tr> 
+                <tr><td>Período:</td><td>Cretácico tardío</td></tr>    
+                <tr><td>Tipo:</td><td>Saurópodo</td></tr>      
+                <tr><td>Descubrimiento:</td><td>Estancia Laguna Palacios, Chubut (2013)</td></tr>    
+        </table>  
+    </div>
+
+</div>
+{% endblock %}

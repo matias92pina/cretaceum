@@ -1,0 +1,40 @@
+<!-- CON EL EXTENDS TRAIGO EL FORMATO DEL HMTL QUE INDICO -->
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2 style="text-align: left;">Unenlagia</h2>
+<hr></hr>
+<div class="fichaInfo">
+    <div class="imagen">
+        <img src="static/img/Unenlagia.jpg">
+    </div>
+
+    <div class="info">
+        <h2>Información</h2>
+        <p>
+            Es el ancestro del ave voladora más antigua que se conoce. Su nombre (en lengua mapuche) 
+            significa "mitad pájaro del Comahue".
+            Este animal era corredor y medía alrededor de 3 metros de largo y 1,20 m de alto. 
+            Tenía los miembros delanteros con forma de alas, y es muy probable que tuviera 
+            plumas. La disposición de la articulación del hombro implica que los brazos del 
+            Unenlagia no colgaban debajo del cuerpo, sino que se plegaban contra este. Se 
+            trata de un miembro de los unenlagiidos de Gondwana, muy similares a las aves
+        </p>
+    </div>
+    <div class="caract">
+        <table border="2" role="row">
+                <tr>
+                    <td colspan="2"><h2>Características</h2></td>
+                </tr>
+                <tr><td>Largo:</td><td>3 metros</td></tr>
+                <tr><td>Peso:</td><td>20 Kg</td></tr>
+                <tr><td>Alimentación:</td><td>Carnívoro</td></tr> 
+                <tr><td>Período:</td><td>Cretácico tardío</td></tr>    
+                <tr><td>Tipo:</td><td>Terópodo</td></tr>      
+                <tr><td>Descubrimiento:</td><td>El Portezuelo, Neuquén, 1997</td></tr>    
+        </table>  
+    </div>
+
+</div>
+{% endblock %}

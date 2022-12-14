@@ -1,0 +1,42 @@
+<!-- CON EL EXTENDS TRAIGO EL FORMATO DEL HMTL QUE INDICO -->
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2 style="text-align: left;">Huinculsaurus</h2>
+<hr></hr>
+<div class="fichaInfo">
+    <div class="imagen">
+        <img src="static/img/Huinculsarus.png">
+    </div>
+
+    <div class="info">
+        <h2>Información</h2>
+        <p>
+            Huinculsaurus (que significa "lagarto de la formación Huincul") es un género de dinosaurio 
+            noasaurido elafrosaurino de la formación Huincul en la provincia de Neuquén, Argentina. 
+            El tipo y la única especie es Huinculsaurus montesi. Probablemente fue de alrededor de 
+            3 metros (9.8 pies) cuando crecía completamente, aunque esto es solo una especulación ya que 
+            actualmente no se conocen especímenes completamente maduros.
+            Huinculsaurus solo se conoce a partir de tres vértebras torácicas y dos sacras de un individuo 
+            inmaduro, descubierto alrededor de 1991. Se descubrió a diez metros de donde se descubrió el 
+            espécimen original de Ilokelesia y las vértebras se separaron mecánicamente durante la 
+            preparación. El género finalmente fue nombrado en 2020. 
+        </p>
+    </div>
+    <div class="caract">
+        <table border="2" role="row">
+                <tr>
+                    <td colspan="2"><h2>Características</h2></td>
+                </tr>
+                <tr><td>Largo:</td><td>2 metros</td></tr>
+                <tr><td>Peso:</td><td>INGRESAR</td></tr>
+                <tr><td>Alimentación:</td><td>Carnívoro</td></tr> 
+                <tr><td>Período:</td><td>Cretácico tardío</td></tr>    
+                <tr><td>Tipo:</td><td>Terópodo</td></tr>      
+                <tr><td>Descubrimiento:</td><td>Plaza Huincul, Neuquén (1991)</td></tr>    
+        </table>  
+    </div>
+
+</div>
+{% endblock %}

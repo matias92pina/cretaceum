@@ -1,0 +1,41 @@
+<!-- CON EL EXTENDS TRAIGO EL FORMATO DEL HMTL QUE INDICO -->
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2 style="text-align: left;">Giganotosaurus</h2>
+<hr></hr>
+<div class="fichaInfo">
+    <div class="imagen">
+        <img src="static/img/Giganotosaurus.png">
+    </div>
+
+    <div class="info">
+        <h2>Información</h2>
+        <p>El giganotosaurus era un inmenso carnívoro del cretácico tardío de la argentina,
+            más largo que el Tyranosaurus Rex. Contaba con una cresta ósea en el cráneo, cabeza robusta,
+            brazos cortos y piernas muy fuertes. Sus patadas de 3 garras, como sus manos, podrían sostener
+            hasta 4 toneladas cada una. 
+
+            Este cazador gigante podría haver atacado a saurópodos tan grandes como el Argentinosaurus.
+
+            Su auge se calcula hace aproximadamente 90 millones de años y se extinguió para los finales
+            del cretácico.
+        </p>
+    </div>
+    <div class="caract">
+        <table border="2" role="row">
+                <tr>
+                    <td colspan="2"><h2>Características</h2></td>
+                </tr>
+                <tr><td>Largo:</td><td>13.7 metros</td></tr>
+                <tr><td>Peso:</td><td>8.5 Toneladas</td></tr>
+                <tr><td>Alimentación:</td><td>Carnívoro</td></tr> 
+                <tr><td>Período:</td><td>Cretácico tardío</td></tr>    
+                <tr><td>Tipo:</td><td>Terópodo</td></tr>      
+                <tr><td>Descubrimiento:</td><td>Neuquén, Argentina (1993)</td></tr>    
+        </table>  
+    </div>
+
+</div>
+{% endblock %}

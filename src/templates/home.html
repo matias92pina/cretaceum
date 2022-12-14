@@ -1,0 +1,36 @@
+<!-- CON EL EXTENDS TRAIGO EL FORMATO DEL HMTL QUE INDICO -->
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Bienvenidos a Cretaceum</h1>
+    <p class="lead">Museo destinado a descubrimientos palentológicos Argentinos</p>
+    <hr class="my-4"></hr>
+    <h3>Elegí por donde quieres iniciar</h3>
+</div>
+
+<div>
+    <div class="dinosaurios">
+        <div class="imagenes">
+            <a href= "{{ url_for('ExpoDinos') }}">
+                <img src="static/img/dino.png" style="height: 200px; width: 350px;">
+            </a>
+        </div>
+        <div class="pie">
+            <p>Exposición de Dinosaurios</p>
+        </div>
+    </div>
+
+    <div class="dinosaurios">
+        <div class="imagenes">
+            <a href= "{{ url_for('ExpoYaci') }}">
+                <img src="static/img/peleon.png" style="height: 200px; width: 350px;">
+            </a>
+        </div>
+        <div class="pie">
+            <p>Exposición de Yacimientos</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,40 @@
+<!-- CON EL EXTENDS TRAIGO EL FORMATO DEL HMTL QUE INDICO -->
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2 style="text-align: left;">Eoraptor</h2>
+<hr></hr>
+<div class="fichaInfo">
+    <div class="imagen">
+        <img src="static/img/Eoraptor.png">
+    </div>
+
+    <div class="info">
+        <h2>Información</h2>
+        <p>
+            Poseía un cráneo pequeño y alargado provisto de una dentadura muy extraña: tenía dientes 
+            pequeños, curvos y afilados que usaba para cortar la carne y para atrapar a las presas, 
+            cuya dieta consistía en insectos y pequeños vertebrados. Sus patas delanteras tenían la 
+            mitad de tamaño que las traseras, tenían cinco dedos, pero solo tres tenían el tamaño y 
+            la fuerza suficientes para poder cazar. Sus huesos, especialmente sus vértebras tenían muchos 
+            orificios para reducir el peso del cuerpo, a pesar de que era ya un animal muy ligero. 
+            Las presas principales de Eoraptor eran pequeños animales como insectos, reptiles y anfibios.
+        </p>
+    </div>
+    <div class="caract">
+        <table border="2" role="row">
+                <tr>
+                    <td colspan="2"><h2>Características</h2></td>
+                </tr>
+                <tr><td>Largo:</td><td>1.5 metros</td></tr>
+                <tr><td>Peso:</td><td>12 Kg</td></tr>
+                <tr><td>Alimentación:</td><td>Carnívoro</td></tr> 
+                <tr><td>Período:</td><td>Triásico</td></tr>    
+                <tr><td>Tipo:</td><td>Prosaurópodo</td></tr>      
+                <tr><td>Descubrimiento:</td><td>Valle de la Luna, San Juan (1991)</td></tr>    
+        </table>  
+    </div>
+
+</div>
+{% endblock %}
