@@ -1,8 +1,6 @@
 from flask import Flask, render_template, request, redirect
-from flask_recaptcha import ReCaptcha
-import json
-
-
+import smtplib
+from decouple import config
 
 app = Flask(__name__)
 
@@ -22,7 +20,25 @@ def Mensaje():
         asunto = request.form['txtAsunto']
         comentario = request.form['txtComent']
     
+    #Envío de email
+    message='Hola {}.\nGracias por enviarnos tu mensaje.\n\nTu mensaje\n{}'.format(nombre,comentario)
+    subject='Cretaceum- Contacto'
+
+    message='Subject:{}\n\n{}'.format(subject,message)
+
+    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server.starttls()
+    server.login('matias.pina@ifts18.edu.ar',config('PASS_EMAIL'))
+
+    server.sendmail('matias.pina@ifts18.edu.ar',email,message)
+
+    server.quit()
+    
     return render_template("mensaje.html")
+
+@app.route('/que_es')
+def quEs():
+    return render_template('queEs.html')
 
 @app.route('/expo_dinos')
 def ExpoDinos():
