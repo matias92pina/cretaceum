@@ -2,23 +2,27 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    <div class="dinosaurios">
-        <div class="imagenes">
-            <img src="static/img/y_anyelo.jpg">
-        </div>
-        <div class="pie">
-            <p>Añelo</p>
-        </div>
+<div class="dinosaurios">
+    <div class="imagenes">
+        <a href= "{{ url_for('InfoAuca') }}">
+            <img src="static/img/y_aucaMahuida.jpg">
+        </a>>
     </div>
+    <div class="pie">
+        <p>ANP Auca Mahuida (Neuquén)</p>
+    </div>
+</div>
 
-    <div class="dinosaurios">
-        <div class="imagenes">
-            <img src="static/img/y_ElCampillo.jpg">
-        </div>
-        <div class="pie">
-            <p>El Campillo</p>
-        </div>
+<div class="dinosaurios">
+    <div class="imagenes">
+        <a href= "{{ url_for('InfoValcheta') }}">
+            <img src="static/img/y_valcheta.jpg">
+        </a>>
     </div>
+    <div class="pie">
+        <p>Bosque Pretrificado de Valcheta (Río Negro)</p>
+    </div>
+</div>
 
     <div class="dinosaurios">
         <div class="imagenes">
@@ -27,17 +31,63 @@
             </a>>
         </div>
         <div class="pie">
-            <p>El Chocón</p>
+            <p>El Chocón (Neuquén)</p>
         </div>
     </div>
 
     <div class="dinosaurios">
         <div class="imagenes">
-            <img src="static/img/y_zapala.jpg"> 
+            <a href= "{{ url_for('InfoBarrales') }}">
+                <img src="static/img/y_losBarrales.jpg">
+            </a>>
         </div>
         <div class="pie">
-            <p>Zapala</p>
+            <p>Embalse Los Barrales (Neuquén)</p>
         </div>
     </div>
 
+    <div class="dinosaurios">
+        <div class="imagenes">
+            <a href= "{{ url_for('InfoMef') }}">
+                <img src="static/img/y_Edigio_Feruglio.jpg">
+            </a>>
+        </div>
+        <div class="pie">
+            <p>Museo Paleontológico Egidio Feruglio (Chubut)</p>
+        </div>
+    </div>
+
+    <div class="dinosaurios">
+        <div class="imagenes">
+            <a href= "{{ url_for('InfoCarmen') }}">
+                <img src="static/img/y_carmen_funes.jpg">
+            </a>>
+        </div>
+        <div class="pie">
+            <p>Carmen Funes Plaza Huincul (Neuquén)</p>
+        </div>
+    </div>
+
+    <div class="dinosaurios">
+        <div class="imagenes">
+            <a href= "{{ url_for('InfoIschi') }}">
+                <img src="static/img/y_Ischi.png">
+            </a>>
+        </div>
+        <div class="pie">
+            <p>Parque Provincial Ischigualasto (San Juan)</p>
+        </div>
+    </div>
+
+    <div class="dinosaurios">
+        <div class="imagenes">
+            <a href= "{{ url_for('InfoToropi') }}">
+                <img src="static/img/y_Totopi.jpg">
+            </a>>
+        </div>
+        <div class="pie">
+            <p>Yacimiento Paleontológico Toropí y Paleomuseo (Corrientes)</p>
+        </div>
+    </div>
+    
 {% endblock %}

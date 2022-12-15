@@ -1,25 +1,29 @@
 from flask import Flask, render_template, request, redirect
-from flask_mysqldb import MySQL
+from flask_recaptcha import ReCaptcha
+import json
+
 
 
 app = Flask(__name__)
-mysql = MySQL(app)
-
-app.config['MYSQL_DATABASE_HOST']     = 'localhost'
-app.config['MYSQL_DATABASE_USER']     = 'root'
-app.config['MYSQL_DATABASE_PASSWORD'] = 'Matias8*00'
-app.config['MYSQL_DATABASE_DB']       = 'usuarios_museo'
-
-mysql.init_app(app)
 
 @app.route('/') #Esta va a ser la página principal
 def Home():
     return render_template('home.html')
 
-#@app.route('/about')
-#def about():
-#    return render_template('about.html')
- 
+@app.route('/contacto')
+def Contacto():
+    return render_template('contacto.html')
+
+@app.route('/mensaje', methods=["POST"])
+def Mensaje():
+    if request.method == "POST":
+        nombre = request.form['txtNombre']
+        email = request.form['email']
+        asunto = request.form['txtAsunto']
+        comentario = request.form['txtComent']
+    
+    return render_template("mensaje.html")
+
 @app.route('/expo_dinos')
 def ExpoDinos():
     return render_template('/Expos/expo_dinos.html')
@@ -100,8 +104,6 @@ def InfoUnen():
 def InfoZupay():
     return render_template('/Dinos/info_zupay.html')
 
-
-#Expo yacimientos después
 @app.route('/expo_yacimientos')
 def ExpoYaci():
     return render_template('/Expos/expo_yaci.html')
@@ -110,38 +112,34 @@ def ExpoYaci():
 def InfoChocon():
     return render_template('/Yaci/info_chocon.html')
 
-#Creamos Perfil
-@app.route('/perfil')
-def Perfil():
-    return render_template('/Usuario/perfil.html')
-#Esta es la parte de logueo de usuario. Después la vemos. 
+@app.route('/info_auca')
+def InfoAuca():
+    return render_template('/Yaci/info_auca.html')
 
-@app.route('/login')
-def Login():
-    return render_template('/Usuario/login.html')
+@app.route('/info_barrales')
+def InfoBarrales():
+    return render_template('/Yaci/info_barrales.html')
 
-#Esta es la parte de creación de usuario.
-@app.route('/create_user')
-def create_user():
-    conexion=mysql.connect()
-    print(conexion)
-    return render_template('/Usuario/create_user.html')
+@app.route('/info_carmen')
+def InfoCarmen():
+    return render_template('/Yaci/info_carmen.html')
 
-@app.route('/add_user', methods=['POST'])
-def add_user():
-    if request.method == 'POST':
-        email    = request.form['emailConf']
-        password = request.form['txtPasswordConf']
-        
-        cur = mysql.connection.cursor()
+@app.route('/info_toropi')
+def InfoToropi():
+    return render_template('/Yaci/info_toropi.html')
 
-        cur.execute('insert into usuario (email,password) values (%s,%s)',
-        (email,password))
+@app.route('/info_ischi')
+def InfoIschi():
+    return render_template('/Yaci/info_ischi.html')
 
-        mysql.connection.commit()
+@app.route('/info_mef')
+def InfoMef():
+    return render_template('/Yaci/info_mef.html')
 
-        cur.close()
-        return 'Recibido, gracias!'
+@app.route('/info_valcheta')
+def InfoValcheta():
+    return render_template('/Yaci/info_valcheta.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True) #Ejecutar la aplicación, el debug es para reiniciar y no tener que ir cerrando todo el tiempo
